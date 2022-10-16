@@ -1,0 +1,1 @@
+/*relationship between arrays and pointers*/
