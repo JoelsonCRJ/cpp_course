@@ -53,7 +53,7 @@ int main()
 
     return 0;
 }
-int * apply_all(const int * first_array,const int &first_size,const int * second_array,const int & second_size)
+int * apply_all(const int * const first_array,const int &first_size,const int * const second_array,const int & second_size)
 {
     int *output {nullptr};
     int counter{0};
