@@ -1,0 +1,30 @@
+class Shallow
+{
+    private:
+	int *data;
+    public:
+	Shallow (int d);
+	Shallow(const Shallow &source);
+       ~Shallow();
+};
+
+Shallow::Shallow(int d)
+{
+    data = new int; //allocate storage
+    *data = d;
+}
+
+Shallow::~Shallow()
+{
+    delete data; //free storage
+    std::cout<<"Destructor freeing data"<<endl;
+}
+
+Shallow:::Shallow(const Shallow &source)
+: data(source.data)
+{
+    std::cout<<"Copy constructor -shallow"<<std::endl;
+}
+
+//Shallow copy - only the pointer is copied - not what it is pointing to!
+//problem: source and the newly created object BOTH point to the SAME data area!
