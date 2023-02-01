@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/deep_copy.dir/deep.cpp.o -o deep_copy 

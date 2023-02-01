@@ -1,3 +1,0 @@
-/home/joelson/Desktop/shallow_copy/build/CMakeFiles/shallow_copy.dir
-/home/joelson/Desktop/shallow_copy/build/CMakeFiles/edit_cache.dir
-/home/joelson/Desktop/shallow_copy/build/CMakeFiles/rebuild_cache.dir
