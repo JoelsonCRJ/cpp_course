@@ -33,5 +33,24 @@ void Movies::add_movie(std::string movie_name,std::string rating_value, int watc
     }
 }
 
+
+void Movies::display_all_movies()
+{
+    if(movies.size()!= 0)
+    {
+        cout<<"You have "<<movies.size()<< " movies which will be displyed bellow. \n";
+        int count=0;
+        for(auto it = movies.begin();it !=movies.end();it++)
+        {
+            cout<< "[ "<<count<<" ]: "<< it->get_name()<<endl;
+            count++;    
+        }
+    }
+    else
+    {
+        cout<<"You don't have movies to be displayed, please add at least one to the collection"<<endl;
+    }
+}
+
 Movies::Movies(){}
 Movies::~Movies(){}
